@@ -2,7 +2,7 @@
 Automatized Reduction Files for IN16b
 ======
 
-The routines IN16bMantidreduction can be used to reduce data measured on IN16b in an automatized way. They treat full QENS as well as BATS spectra and also the FWS. The diffraction data are also reduced. 
+The routines IN16bMantidreduction can be used to reduce data measured on IN16b in an automatized way. They treat full QENS as well as BATS spectra and also the FWS. The diffraction data are also reduced. Mantid is needed for the data reduction. Tested on mantid workbench 6.1.202108.26.1625 via visa.ill.fr
 
 Overview of the files:
 ----------------------------
