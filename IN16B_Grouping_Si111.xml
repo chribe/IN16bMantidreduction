@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Detector grouping file for Si111 cycle 192 -->
+<!-- Markus Appel, Institut Laue-Langevin, 2019 -->
+<!-- $Id: 4bc12cc10a036074c55a644a16a9c46950d74cf5 $ -->
+<detector-grouping instrument="IN16B">
+  <group name="tube1"> <detids val="2049"/> </group>
+  <group name="tube2"> <detids val="2050"/> </group>
+
+  <group name="psd1"> <detids val="30-93"/> </group>
+  <group name="psd2"> <detids val="141-225"/> </group>
+  <group name="psd3"> <detids val="266-374"/> </group>
+  <group name="psd4"> <detids val="394-502"/> </group>
+  <group name="psd5"> <detids val="522-630"/> </group>
+  <group name="psd6"> <detids val="650-758"/> </group>
+  <group name="psd7"> <detids val="778-886"/> </group>
+  <group name="psd8"> <detids val="906-1014"/> </group>
+  <group name="psd9"> <detids val="1034-1142"/> </group>
+  <group name="psd10"> <detids val="1162-1270"/> </group>
+  <group name="psd11"> <detids val="1290-1398"/> </group>
+  <group name="psd12"> <detids val="1418-1526"/> </group>
+  <group name="psd13"> <detids val="1546-1654"/> </group>
+  <group name="psd14"> <detids val="1674-1782"/> </group>
+  <group name="psd15"> <detids val="1802-1910"/> </group>
+  <group name="psd16"> <detids val="1930-2038"/> </group>
+</detector-grouping>

@@ -1,0 +1,110 @@
+columns:
+   -  title: "Numor"
+      titleFormat: "{:6}"
+      h5path: "/entry0/run_number"
+      format: "{:06d}"
+
+   -  title: "Proposal"
+      titleFormat: "{:11}"
+      h5path: "entry0/experiment_identifier"
+      # if identifier is empty (only spaces), then it's internalUse
+      expression: "{0: 'internalUse'}.get(len(x.strip()), x)"
+      format: "{:11.11}"
+
+   -  title: "Subtitle"
+      titleFormat: "{:40}"
+      h5path: "entry0/subtitle"
+      format: "{:40.40}"
+
+
+   -  title: "StartTime"
+      titleFormat: "{:19}"
+      h5path: "entry0/start_time"
+      format: "{:19}"
+
+
+   -  title: "t(sec)"
+      titleFormat: "{:>6}"
+      h5path: "entry0/time"
+      format: "{:>6.0f}"
+
+
+   -  title: "TSam(K)"
+      titleFormat: "{:>7}"
+      h5path: "entry0/sample/temperature"
+      format: "{:>7.2f}"
+
+   -  title: "TReg(K)"
+      titleFormat: "{:>7}"
+      h5path: "entry0/sample/regulation_temperature"
+      format: "{:>7.2f}"
+
+   -  title: "TSet(K)"
+      titleFormat: "{:>7}"
+      h5path: "entry0/sample/setpoint_temperature"
+      format: "{:>7.2f}"
+
+   -  title: "PSam(bar)"
+      titleFormat: "{:>9}"
+      h5path: "entry0/sample/pressure"
+      format: "{:>9.0f}"
+
+   -  title: "SamSRot"
+      titleFormat: "{:>7}"
+      h5path: "entry0/instrument/SamS_Rot/value"
+      format: "{:>7.1f}"
+
+
+   -  title: "Profile"
+      titleFormat: "{:>7}"
+      h5path: "entry0/instrument/Doppler/velocity_profile"
+      expression: "{0: 'sine', 1: 'AccVel', 2: 'fixed'}.get(x, x)"
+      format: "{:>7}"
+
+   -  title: "dE(ueV)"
+      titleFormat: "{:7}"
+      h5path: "entry0/instrument/Doppler/maximum_delta_energy"
+      format: "{:7.1f}"
+
+   -  title: "A(mm)"
+      titleFormat: "{:<5}"
+      h5path: "entry0/instrument/Doppler/doppler_amplitude"
+      format: "{:<5.0f}"
+
+   -  title: "NChan"
+      titleFormat: "{:5}"
+      h5path: "entry0/instrument/PSD/time_of_flight"
+      h5index: 1
+      format: "{:5.0f}"
+
+   -  title: "mirror"
+      titleFormat: "{:6}"
+      h5path: "entry0/instrument/Doppler/mirror_sense"
+      expression: "{14: 'yes', 16: 'no'}.get(x, x)"
+      format: "{:6}"
+
+
+   -  title: "PSD(cps)"
+      titleFormat: "{:8}"
+      h5path: "entry0/instrument/PSD/detrate"
+      format: "{:8.2e}"
+
+   -  title: "Mon(cps)"
+      titleFormat: "{:8}"
+      h5path: "entry0/monitor/monrate"
+      format: "{:8.0f}"
+
+   -  title: "PST(rpm)"
+      titleFormat: "{:8}"
+      h5path: "entry0/instrument/PST/rotation_speed"
+      format: "{:8.0f}"
+
+   -  title: "BG(rpm)"
+      titleFormat: "{:7}"
+      h5path: "entry0/instrument/BG/rotation_speed"
+      format: "{:7.0f}"
+
+   -  title: "Reactor(MW)"
+      titleFormat: "{:11}"
+      h5path: "entry0/reactor_power"
+      format: "{:11.1f}"
